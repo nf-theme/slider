@@ -6,7 +6,7 @@
 > [nf-theme-option](https://github.com/hieu-pv/nf-theme-option)
 
 <a name="installation"></a>
-#### Installation
+## Installation
 ##### Step 1: Install Through Composer
 ```
 composer require vicoders/slider-for-nftheme

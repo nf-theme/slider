@@ -27,12 +27,12 @@ class SliderServiceProvider extends ServiceProvider
         add_action('wp_enqueue_scripts', function () {
             wp_enqueue_style(
                 'slider-module-style',
-                wp_slash(get_stylesheet_directory_uri() . '/vc-slider-module/assets/dist/app.css'),
+                wp_slash(get_stylesheet_directory_uri() . '/vendor/vicoders/slider-for-nftheme/assets/dist/app.css'),
                 false
             );
             wp_enqueue_script(
                 'slider-module-scripts',
-                wp_slash(get_stylesheet_directory_uri() . '/vc-slider-module/assets/dist/app.js'),
+                wp_slash(get_stylesheet_directory_uri() . '/vendor/vicoders/slider-for-nftheme/assets/dist/app.js'),
                 'jquery',
                 '1.2',
                 true
@@ -44,7 +44,7 @@ class SliderServiceProvider extends ServiceProvider
             $type         = $slider->getType();
             $style        = $slider->getStyle();
             $options      = $slider->getOptions();
-            $size         = get_stylesheet_directory_uri() . '/vc-slider-module/assets/images/' . $slider->getSize() . '.png';
+            $size         = get_stylesheet_directory_uri() . '/vendor/vicoders/slider-for-nftheme/assets/images/' . $slider->getSize() . '.png';
             $name_gallery = $slider->getNameGallery();
 
             $list_slider = get_option(str_slug($name_gallery));
