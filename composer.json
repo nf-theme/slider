@@ -8,10 +8,11 @@
     }],
     "autoload": {
         "psr-4": {
-            "VC\\Slider": "src/"
+            "VC\\Slider\\": "src/"
         }
     },
     "require": {
-        "nf/core": ">=2.0"
+        "nf/core": ">=2.0",
+        "nf/option": "^1.0"
     }
 }
