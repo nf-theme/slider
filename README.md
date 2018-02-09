@@ -26,7 +26,7 @@ composer require vicoders/slider-for-nftheme
 
 All supported type can be found here 
 - [Size](https://github.com/garungabc/SliderForNftheme/blob/master/src/Abstracts/Size.php)
-- [Type](https://github.com/garungabc/SliderForNftheme/blob/master/src/Abstracts/Type.php)
+- [SliderType](https://github.com/garungabc/SliderForNftheme/blob/master/src/Abstracts/SliderType.php)
 
 ```php
 use VC\Slider\Abstracts\Size;
