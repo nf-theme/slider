@@ -30,12 +30,12 @@ All supported type can be found here
 
 ```php
 use VC\Slider\Abstracts\Size;
-use VC\Slider\Abstracts\Type;
+use VC\Slider\Abstracts\SliderType;
 use VC\Slider\Facades\SliderManager;
 
 SliderManager::add([
     'name'    => 'Slider Homepage',
-    'type'    => Type::SLICK,
+    'type'    => SliderType::SLICK,
     'style'   => 'style-1',
     'size'    => Size::SIZE_3X1,
     'fields'  => [
