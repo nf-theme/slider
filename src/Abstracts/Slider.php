@@ -3,7 +3,7 @@
 namespace VC\Slider\Abstracts;
 
 use VC\Slider\Abstracts\Size;
-use VC\Slider\Abstracts\Type;
+use VC\Slider\Abstracts\SliderType;
 
 class Slider 
 {
@@ -17,7 +17,7 @@ class Slider
 	 * [$type slick, owl-carousel]
 	 * @var string
 	 */
-	public $type = Type::SLICK;
+	public $type = SliderType::SLICK;
 
 	/**
 	 * [$fields options for slider]
