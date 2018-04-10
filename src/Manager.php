@@ -36,9 +36,11 @@ class Manager
             "infinite"       => true,
             "dots"           => true,
         ];
+        // fix issue here
         if (!isset($data['options'])) {
             $data['options'] = [];
         }
+
         $options = wp_parse_args($data['options'], $default_options);
 
         $slider->setOptions($options);
