@@ -28,15 +28,16 @@ class Manager
         ThemeOptionManager::add($args_themeoption);
 
         $fields = new Collection();
+        $default_options = [
+            "slidesToShow"   => 1,
+            "slidesToScroll" => 1,
+            "autoplay"       => true,
+            "pauseOnHover"   => true,
+            "infinite"       => true,
+            "dots"           => true,
+        ];
         if (!isset($data['options'])) {
-            $default_options = [
-                "slidesToShow"   => 1,
-                "slidesToScroll" => 1,
-                "autoplay"       => true,
-                "pauseOnHover"   => true,
-                "infinite"       => true,
-                "dots"           => true,
-            ];
+            $data['options'] = [];
         }
         $options = wp_parse_args($data['options'], $default_options);
 
