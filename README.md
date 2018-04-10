@@ -26,16 +26,16 @@ composer require vicoders/slider-for-nftheme
 
 All supported type can be found here 
 - [Size](https://github.com/garungabc/SliderForNftheme/blob/master/src/Abstracts/Size.php)
-- [Type](https://github.com/garungabc/SliderForNftheme/blob/master/src/Abstracts/Type.php)
+- [SliderType](https://github.com/garungabc/SliderForNftheme/blob/master/src/Abstracts/SliderType.php)
 
 ```php
 use VC\Slider\Abstracts\Size;
-use VC\Slider\Abstracts\Type;
+use VC\Slider\Abstracts\SliderType;
 use VC\Slider\Facades\SliderManager;
 
 SliderManager::add([
     'name'    => 'Slider Homepage',
-    'type'    => Type::SLICK,
+    'type'    => SliderType::SLICK,
     'style'   => 'style-1',
     'size'    => Size::SIZE_3X1,
     'fields'  => [
