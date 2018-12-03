@@ -1,18 +1,20 @@
 {
-    "name": "vicoders/slider-for-nftheme",
-    "description": "Slider Module Extension for NF Theme",
-    "license": "MIT",
-    "authors": [{
-        "name": "Vicoders",
-        "email": "vicoders@gmail.com"
-    }],
-    "autoload": {
-        "psr-4": {
-            "VC\\Slider\\": "src/"
-        }
-    },
-    "require": {
-        "nf/core": ">=2.0",
-        "nf/option": "^1.0"
+  "name": "nf/slider",
+  "description": "Slider for NF Theme",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Vicoders",
+      "email": "vicoders@gmail.com"
     }
+  ],
+  "autoload": {
+    "psr-4": {
+      "NF\\Slider\\": "src/"
+    }
+  },
+  "require": {
+    "nf/core": "*",
+    "nf/option": "*"
+  }
 }

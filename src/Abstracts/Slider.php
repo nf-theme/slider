@@ -1,9 +1,9 @@
 <?php 
 
-namespace VC\Slider\Abstracts;
+namespace NF\Slider\Abstracts;
 
-use VC\Slider\Abstracts\Size;
-use VC\Slider\Abstracts\SliderType;
+use NF\Slider\Abstracts\Size;
+use NF\Slider\Abstracts\SliderType;
 
 class Slider 
 {

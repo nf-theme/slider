@@ -9,7 +9,7 @@
 ## Installation
 ##### Step 1: Install Through Composer
 ```
-composer require vicoders/slider-for-nftheme
+composer require nf/slider-for-nftheme
 ```
 ##### Step 2: Add the Service Provider
 > Open `config/app.php` and register the required service provider.
@@ -17,7 +17,7 @@ composer require vicoders/slider-for-nftheme
 ```php
   'providers'  => [
         // .... Others providers 
-        \VC\Slider\SliderServiceProvider::class
+        \NF\Slider\SliderServiceProvider::class
     ],
 ```
 
@@ -29,9 +29,9 @@ All supported type can be found here
 - [SliderType](https://github.com/garungabc/SliderForNftheme/blob/master/src/Abstracts/SliderType.php)
 
 ```php
-use VC\Slider\Abstracts\Size;
-use VC\Slider\Abstracts\SliderType;
-use VC\Slider\Facades\SliderManager;
+use NF\Slider\Abstracts\Size;
+use NF\Slider\Abstracts\SliderType;
+use NF\Slider\Facades\SliderManager;
 
 SliderManager::add([
     'name'    => 'Slider Homepage',
@@ -58,21 +58,21 @@ SliderManager::add([
 ```
 
 ##### Step 4: Add shortcode
-> Automatic create a shortcode name `vc-slider` with a attribute `name` is require:
+> Automatic create a shortcode name `nf-slider` with a attribute `name` is require:
 
 ```php
-[vc-slider name="{slider name}"]
+[nf-slider name="{slider name}"]
 ```
 
 Example:
 ```php
-[vc-slider name="Banner homepage"]
+[nf-slider name="Banner homepage"]
 ```
 
 ##### Step 5: Insert shortcode wherever you need
 > Very easy
 ```php
-do_shortcode("[vc-slider name='Banner homepage']")
+do_shortcode("[nf-slider name='Banner homepage']")
 ```
 
 ## Last step

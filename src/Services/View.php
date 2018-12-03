@@ -1,6 +1,6 @@
 <?php
 
-namespace VC\Slider\Services;
+namespace NF\Slider\Services;
 
 class View
 {

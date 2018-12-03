@@ -1,10 +1,10 @@
 <?php
 
-namespace VC\Slider;
+namespace NF\Slider;
 
 use Illuminate\Support\Collection;
 use NightFury\Option\Facades\ThemeOptionManager;
-use VC\Slider\Abstracts\Slider;
+use NF\Slider\Abstracts\Slider;
 
 class Manager
 {

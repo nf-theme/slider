@@ -1,5 +1,5 @@
 <?php
-namespace VC\Slider\Abstracts;
+namespace NF\Slider\Abstracts;
 
 /**
  * Size Abstract class - Determine size for background of images slide

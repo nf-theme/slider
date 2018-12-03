@@ -1,6 +1,6 @@
 <?php
 
-namespace VC\Slider\Console;
+namespace NF\Slider\Console;
 
 use Exception;
 use Symfony\Component\Console\Command\Command;

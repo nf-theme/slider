@@ -1,10 +1,10 @@
 <?php
 
-namespace VC\Slider;
+namespace NF\Slider;
 
 use Illuminate\Support\ServiceProvider;
 use NF\Facades\App;
-use VC\Slider\Manager;
+use NF\Slider\Manager;
 
 class SliderServiceProvider extends ServiceProvider
 {
@@ -27,24 +27,24 @@ class SliderServiceProvider extends ServiceProvider
         add_action('wp_enqueue_scripts', function () {
             wp_enqueue_style(
                 'slider-module-style',
-                wp_slash(get_stylesheet_directory_uri() . '/vendor/vicoders/slider-for-nftheme/assets/dist/app.css'),
+                wp_slash(get_stylesheet_directory_uri() . '/vendor/nf/slider/assets/dist/app.css'),
                 false
             );
             wp_enqueue_script(
                 'slider-module-scripts',
-                wp_slash(get_stylesheet_directory_uri() . '/vendor/vicoders/slider-for-nftheme/assets/dist/app.js'),
+                wp_slash(get_stylesheet_directory_uri() . '/vendor/nf/slider/assets/dist/app.js'),
                 'jquery',
                 '1.2',
                 true
             );
         });
-        add_shortcode('vc-slider', function ($args) {
+        add_shortcode('nf-slider', function ($args) {
             $manager      = App::make('SliderManager');
             $slider       = $manager->getSlider($args['name']);
             $type         = $slider->getType();
             $style        = $slider->getStyle();
             $options      = $slider->getOptions();
-            $size         = get_stylesheet_directory_uri() . '/vendor/vicoders/slider-for-nftheme/assets/images/' . $slider->getSize() . '.png';
+            $size         = get_stylesheet_directory_uri() . '/vendor/nf/slider/assets/images/' . $slider->getSize() . '.png';
             $name_gallery = $slider->getNameGallery();
 
             $list_slider = get_option(str_slug($name_gallery));

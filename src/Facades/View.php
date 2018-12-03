@@ -1,6 +1,6 @@
 <?php
 
-namespace VC\Slider\Facades;
+namespace NF\Slider\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
@@ -8,6 +8,6 @@ class View extends Facade
 {
     protected static function getFacadeAccessor()
     {
-        return new \VC\Slider\Services\View;
+        return new \NF\Slider\Services\View;
     }
 }

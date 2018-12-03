@@ -1,9 +1,9 @@
 <?php
 
-namespace VC\Slider\Facades;
+namespace NF\Slider\Facades;
 
 use Illuminate\Support\Facades\Facade;
-use VC\Slider\Manager;
+use NF\Slider\Manager;
 
 class SliderManager extends Facade
 {
